@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coming Soon</title>
+  
+  <!-- Add the following line for the favicon (replace 'your-favicon.png' with the actual path to your favicon) -->
+  <link rel="icon" href="C:\Users\sejed\Desktop\bureau\analog\ComingSoon.png" type="image/png">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      overflow: hidden;
+    }
+
+    .left-content {
+      flex: 1;
+      color: #fff;
+      background: linear-gradient(rgba(36, 36, 36, 0.8), rgba(36, 36, 36, 0.8));
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+      position: relative; /* Added position relative for button positioning */
+    }
+
+    .top-text {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .animation-text {
+      font-size: 36px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .animation-spinner {
+      width: 50px;
+      height: 50px;
+      border: 6px solid #fff;
+      border-top: 6px solid transparent;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+      margin-bottom: 20px;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    .sub-text {
+      font-size: 18px;
+      opacity: 0.9;
+    }
+
+    .back-button {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      background-color: #fff;
+      color: #333;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    .right-content {
+      flex: 2;
+      overflow: hidden;
+      height: 100vh;
+    }
+
+    .video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+  <div class="left-content">
+    <button class="back-button" onclick="goBack()">← Go Back</button>
+    <div class="top-text">TSSEJED COMPANY in your service !</div>
+    <div class="animation-text">Coming Soon</div>
+    <div class="animation-spinner"></div>
+    <div class="sub-text">Exciting things are in the works. Stay tuned!</div>
+  </div>
+  <div class="right-content">
+    <!-- Replace 'your-video.mp4' with the actual path to your video file -->
+    <video class="video" autoplay loop muted>
+      <source src="C:\Users\sejed\Desktop\bureau\analog\Elegant Beige Launching Soon Instagram Reel.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <script>
+    function goBack() {
+      window.history.back();
+    }
+  </script>
+</body>
+</html>
